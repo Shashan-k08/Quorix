@@ -6,11 +6,12 @@ body {
   }
   
   #container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
+    box-shadow: 0 7px 29px 0 #64646f33;
+    /* padding: 10px 22px 10px 22px; */
+    padding: 13px;
+    margin: 10px;
+    /* height: 100vh; */
   }
 
   #ad-section {
@@ -39,13 +40,16 @@ body {
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
+    width: 95%;
   }
   
   .ad p {
     margin: 0;
     font-size: 12px;
   }
-  
+  button{
+    cursor: pointer;
+  }
   .try-btn, .dismiss-btn {
     background:none;
     border: none;
@@ -65,7 +69,8 @@ body {
   }
   
   .try-btn:hover, .dismiss-btn:hover {
-    background: #135ba1;
+    font-size: 12.5px;
+    background: none;
   }
   
   #main-content {
@@ -86,6 +91,7 @@ body {
     margin-top: 5px;
     border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
   }
   
   #footer {

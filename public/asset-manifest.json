@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.96713c31.css",
-    "main.js": "/static/js/main.0639b151.js",
+    "main.css": "/static/css/main.fa89b826.css",
+    "main.js": "/static/js/main.c7a2f7ad.js",
     "static/media/TechStack logo.png": "/static/media/TechStack logo.3b13ab2797acb55ff36d.png",
     "index.html": "/index.html",
-    "main.96713c31.css.map": "/static/css/main.96713c31.css.map",
-    "main.0639b151.js.map": "/static/js/main.0639b151.js.map"
+    "main.fa89b826.css.map": "/static/css/main.fa89b826.css.map",
+    "main.c7a2f7ad.js.map": "/static/js/main.c7a2f7ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.96713c31.css",
-    "static/js/main.0639b151.js"
+    "static/css/main.fa89b826.css",
+    "static/js/main.c7a2f7ad.js"
   ]
 }
