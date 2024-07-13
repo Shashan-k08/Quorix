@@ -16,7 +16,8 @@
     "build": "react-scripts build",
     "build:popup": "react-scripts build && node scripts/copyBuildFiles.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch": "nodemon --watch src --exec \"npm run build:popup\""
   },
   "eslintConfig": {
     "extends": [

@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+  }
+  
+  #container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  #header h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  #closeBtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #ad-section {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  #ad-section h2 {
+    margin: 0;
+    font-size: 14px;
+    color: #1a73e8;
+  }
+  
+  .ad {
+    background: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .ad p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .try-btn, .dismiss-btn {
+    background: #1a73e8;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .try-btn:hover, .dismiss-btn:hover {
+    background: #135ba1;
+  }
+  
+  #main-content {
+    margin-top: 10px;
+  }
+  
+  #main-content h2 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .question {
+    background: #f1f1f1;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  #footer {
+    margin-top: 10px;
+    font-size: 10px;
+    color: #555;
+  }
+  
+  #footer a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
