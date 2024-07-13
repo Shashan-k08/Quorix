@@ -1,11 +1,11 @@
 import './App.css';
 
-function App() {
+function Popup() {
   return (
     <div className="App">
-    <p>Hey!</p>
+    <p>Hey!dlfkdkfjijgiso</p>
     </div>
   );
 }
 
-export default App;
+export default Popup;
