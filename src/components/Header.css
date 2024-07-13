@@ -1,0 +1,23 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+#header h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+#header-img{
+    height: 2.3rem;
+    width: 2rem;
+}
+#closeBtn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}

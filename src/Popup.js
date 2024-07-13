@@ -1,6 +1,7 @@
 import React from 'react';
 import './Popup.css';
-
+import Header from './components/Header';
+import logo from './img/TechStack logo.png'
 const Popup = () => {
   const handleTryNow = () => {
     alert('Trying Claude 3.5 Sonnet!');
@@ -12,14 +13,12 @@ const Popup = () => {
 
   return (
     <div id="container">
-      <div id="header">
-        <h1>Help AI Chat Bot</h1>
-        <button id="closeBtn" onClick={() => window.close()}>X</button>
-      </div>
+      <Header/>
       <div id="ad-section">
-        <h2>Techstack</h2>
+       <div id='img-box'> <img src={logo} id='header-img'></img> <h2>Techstack</h2></div>
         <div className="ad">
-          <p>The smartest and fastest AI yet?<br />Invite friends to try Claude 3.5 Sonnet for free!</p>
+          <button id="closeBtn2"  onClick={() => window.close()}>X</button>
+          <p style={{marginTop:"-4px"}}>The smartest and fastest AI yet?<br />Invite friends to try Claude 3.5 Sonnet <br/> for free!</p>
           <button className="try-btn" onClick={handleTryNow}>Try Now</button>
           <button className="dismiss-btn" onClick={handleDismiss}>Dismiss</button>
         </div>
@@ -31,7 +30,8 @@ const Popup = () => {
         <div className="question">Generate five catchy titles for my writing about the use case of ChatGPT</div>
       </div>
       <div id="footer">
-        <p>Sider starts a new chat each time you reopen the sidebar. If you want to resume the last chat, <a href="/">change this in the settings.</a></p>
+      <button id="closeBtn2" onClick={() => window.close()}>X</button>
+        <p style={{marginTop:"-1px"}}>Sider starts a new chat each time you reopen the sidebar. If you want to resume the last chat, <a href="/">change this in the settings.</a></p>
       </div>
     </div>
   );
