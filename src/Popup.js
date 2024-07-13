@@ -15,7 +15,7 @@ const Popup = () => {
     <div id="container">
       <Header/>
       <div id="ad-section">
-       <div id='img-box'> <img src={logo} id='header-img'></img> <h2>Techstack</h2></div>
+       <div id='img-box'> <img src={logo} alt='' id='header-img'></img> <h2>Techstack</h2></div>
         <div className="ad">
           <button id="closeBtn2"  onClick={() => window.close()}>X</button>
           <p style={{marginTop:"-4px"}}>The smartest and fastest AI yet?<br />Invite friends to try Claude 3.5 Sonnet <br/> for free!</p>
