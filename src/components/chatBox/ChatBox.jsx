@@ -17,6 +17,8 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 
 const ChatBox = () => {
+  const [isTyping, setTyping] = useState(false);
+  const [firstMessage, setFirstMessage] = useState(true);
   const [messages, setMessages] = useState([
     {
       message:
@@ -33,17 +35,44 @@ const ChatBox = () => {
       sender: "Chat Bot",
     },
   ]);
+  const handleSend = async (message) => {
+    setTyping(true);
+
+    setMessages((prevMessages) => {
+      const newMessage = {
+        message: message,
+        sender: "user",
+      };
+
+      // Check if it's the first message
+      if (firstMessage) {
+        setFirstMessage(false);
+        return [newMessage];
+      } else {
+        return [...prevMessages, newMessage];
+      }
+    });
+  };
   return (
     <div id="chat-box">
-      <MainContainer style={{ width: "100%" }}>
+      <MainContainer style={{ width: "100%", height: "38vh" }}>
         <ChatContainer>
-          <MessageList scrollBehavior="smooth" className="question">
+          <MessageList
+            scrollBehavior="smooth"
+            typingIndicator={
+              isTyping ? <TypingIndicator content="Chat Bot is typing" /> : null
+            }
+            className="question"
+          >
             {messages.map((message, i) => {
-              console.log(message);
+              // console.log(message);
               return <Message key={i} model={message} />;
             })}
           </MessageList>
-          <MessageInput></MessageInput>
+          <MessageInput
+            placeholder="Type message here"
+            onSend={handleSend}
+          ></MessageInput>
         </ChatContainer>
       </MainContainer>
     </div>
