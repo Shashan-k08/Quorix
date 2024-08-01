@@ -46,7 +46,7 @@ const Popup = () => {
       </div>
       <div id="main-content">
         <h2>How can I assist you today?</h2>
-        <div className="question">
+        {/* <div className="question">
           Tell me something about the Big Bang so that I can explain it to my
           5-year-old child
         </div>
@@ -56,7 +56,7 @@ const Popup = () => {
         <div className="question">
           Generate five catchy titles for my writing about the use case of
           ChatGPT
-        </div>
+        </div> */}
       </div>
       <div id="footer">
         <button id="closeBtn2" onClick={close2}>
