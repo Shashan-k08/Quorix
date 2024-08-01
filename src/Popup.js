@@ -1,7 +1,7 @@
 import React from "react";
 import "./Popup.css";
 import Header from "./components/Header";
-import logo from "./img/TechStack logo.png";
+import logo from "./img/icon-1.png";
 import ChatBox from "./components/chatBox/ChatBox";
 const Popup = () => {
   const handleTryNow = () => {
@@ -25,7 +25,7 @@ const Popup = () => {
       <div id="ad-section">
         <div id="img-box">
           {" "}
-          <img src={logo} alt="" id="header-img"></img> <h2>Techstack</h2>
+          <img src={logo} alt="" id="header-img"></img> <h2>Qu<span style={{color:"gray"}}>orix</span></h2>
         </div>
         <div className="ad">
           <button id="closeBtn2" onClick={close1}>
