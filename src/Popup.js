@@ -5,7 +5,7 @@ import logo from "./img/icon-1.png";
 import ChatBox from "./components/chatBox/ChatBox";
 const Popup = () => {
   const handleTryNow = () => {
-    alert("Trying Claude 3.5 Sonnet!");
+    alert("Trying Quorix 3.5 ");
   };
 
   const handleDismiss = () => {
@@ -34,7 +34,7 @@ const Popup = () => {
           <p style={{ marginTop: "-4px" }}>
             The smartest and fastest AI yet?
             <br />
-            Invite friends to try Claude 3.5 Sonnet <br /> for free!
+            Invite friends to try Quorix 3.5  <br /> for free!
           </p>
           <button className="try-btn" onClick={handleTryNow}>
             Try Now

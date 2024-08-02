@@ -94,7 +94,7 @@ const ChatBox = () => {
 
   return (
     <div id="chat-box">
-      <MainContainer style={{ width: "100%", height: "38vh" }}>
+      <MainContainer style={{ width: "100%", height: "30vh" }}>
         <ChatContainer>
           <MessageList
             scrollBehavior="smooth"
